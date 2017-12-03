@@ -1,0 +1,2040 @@
+2017-11-10 03:39:21 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: PExCrawler)
+2017-11-10 03:39:21 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'PExCrawler', 'FEED_FORMAT': 'csv', 'FEED_URI': 'output.csv', 'NEWSPIDER_MODULE': 'PExCrawler.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['PExCrawler.spiders']}
+2017-11-10 03:39:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2017-11-10 03:39:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-10 03:39:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-10 03:39:21 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-11-10 03:39:21 [scrapy.core.engine] INFO: Spider opened
+2017-11-10 03:39:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-10 03:39:21 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-11-10 03:39:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.pinoyexchange.com> from <GET http://www.pinoyexchange.com/robots.txt>
+2017-11-10 03:39:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.pinoyexchange.com> (referer: None)
+2017-11-10 03:39:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.pinoyexchange.com/forums/forumdisplay.php?f=10> (referer: None)
+2017-11-10 03:39:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/showthread.php?t=593662> (referer: http://www.pinoyexchange.com/forums/forumdisplay.php?f=10)
+2017-11-10 03:39:27 [py.warnings] WARNING: c:\users\r\appdata\local\programs\python\python36-32\lib\site-packages\bs4\__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 193 of the file c:\users\r\appdata\local\programs\python\python36-32\lib\runpy.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "lxml")
+
+  markup_type=markup_type))
+
+2017-11-10 03:39:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Anong gusto mong sabihin kay crush na di mo masabi ng '
+                  'personal? Hirap diba lalo pag nakikiapag-usap siya sa yo at '
+                  'di mo masabi kung ano talaga laman ng puso mo. haaaay..'],
+ 'post_counter': ['1'],
+ 'post_subject': 'Anong gusto mong sabihin kay crush?',
+ 'post_time': ['Oct 13, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=450857> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=476480> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=445124> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=515798> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=450857>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['**** you!'],
+ 'post_counter': ['5'],
+ 'post_subject': '',
+ 'post_time': ['Oct 13, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 9.55'],
+ 'user_total_posts': [' 21,610'],
+ 'username': ['sexyfive']}
+2017-11-10 03:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=376925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=476480>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ["You're smart and cute. Bagay tayo Kaso I'm in love with ... "
+                  'Damn!'],
+ 'post_counter': ['8'],
+ 'post_subject': '',
+ 'post_time': ['Oct 15, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.75'],
+ 'user_total_posts': [' 3,683'],
+ 'username': ['valerie_hatesyou']}
+2017-11-10 03:39:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['^off topic ka!'],
+ 'post_counter': ['4'],
+ 'post_subject': '',
+ 'post_time': ['Oct 13, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=445124>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Mga Crush ko sa office. "Ang cute nyo" R.Higa Caio Ivan Dom '
+                  'Joseph Peng 2 chinese guys na laging magkasama na taga 6th '
+                  'floor Andrew'],
+ 'post_counter': ['6'],
+ 'post_subject': '',
+ 'post_time': ['Oct 14, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.11'],
+ 'user_total_posts': [' 259'],
+ 'username': ['BOTTOMCHUBBY']}
+2017-11-10 03:39:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=515798>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Dear Crush, Lalo kang gumagwapo kapag nakangiti ka, at mas '
+                  "lalong gwapo kapag para s'akin ngiti mo. Dalasan mo ah, "
+                  'para lagi kang gwapo.'],
+ 'post_counter': ['9'],
+ 'post_subject': '',
+ 'post_time': ['Oct 27, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 193'],
+ 'username': ['CalamansiShake']}
+2017-11-10 03:39:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['^nux PBB teens makiki PBB lang: "ang wafu naman ng brain '
+                  'cells mo..killigssssssss much"'],
+ 'post_counter': ['2'],
+ 'post_subject': '',
+ 'post_time': ['Oct 13, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=376925>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['^naman! consistent parin kay brain cells ha'],
+ 'post_counter': ['3'],
+ 'post_subject': '',
+ 'post_time': ['Oct 13, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 437'],
+ 'username': ['mochanne']}
+2017-11-10 03:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=498181> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=498181>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['sa crush kong pexer hinahanap kita sa BP di kita maabutang '
+                  'OL tapos natotorpe naman akong iMSG ka haaaaaaaaaaaay'],
+ 'post_counter': ['7'],
+ 'post_subject': '',
+ 'post_time': ['Oct 14, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.21'],
+ 'user_total_posts': [' 409'],
+ 'username': ['alice_alice']}
+2017-11-10 03:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440150> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=424310> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=215167> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=515902> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440150>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['idadaan ko nalang sa kanta Matagal ko nang gustong malaman '
+                  'mo matagal ko nang itinatago-tago ‘to nahihiyang magsalita '
+                  'at umuurong aking dila pwede bang bukas na, ipagpaliban '
+                  'muna natin ‘to [refrain] Dahil kumukuha lang ng tyempo '
+                  'upang sabihin sa iyo [chorus] Kras kita pero ‘di mo lang '
+                  'alam Kras kita pero ‘di mo lang ramdam Kras kita kahit ‘di '
+                  'mo na ako tinitignan Kras kita kahit ‘di mo lang alam, oh '
+                  'oh woh'],
+ 'post_counter': ['13'],
+ 'post_subject': '',
+ 'post_time': ['Oct 30, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.26'],
+ 'user_total_posts': [' 600'],
+ 'username': ['simplykhrizzie']}
+2017-11-10 03:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=413561> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=424310>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Dear Mr.Sy, alam kong alam mo na na. so ayun... okay fine. '
+                  'crush kita. iyon lang. thanks.... walang kakwenta-kwenta '
+                  'ang nasabi ko kasi natutuliro ako kapag kaharap ka. ewan. '
+                  'magulo.... sige uwi na ako. muah'],
+ 'post_counter': ['10'],
+ 'post_subject': '',
+ 'post_time': ['Oct 28, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.22'],
+ 'user_total_posts': [' 536'],
+ 'username': ['mimiwko1']}
+2017-11-10 03:39:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['kunwari ako iyon pinapatungkulan mo..o siya i love you too '
+                  'joke lang..kakatuwa naman ni compose mo sa kras ko, '
+                  'nothings change..ikaw pa rin'],
+ 'post_counter': ['17'],
+ 'post_subject': '',
+ 'post_time': ['Oct 31, 2012'],
+ 'quoted_post': ['Mahal kita if you only know Tinuruan mo ko how to grow Ikaw '
+                 'rin ang nagpapaglow Sa level ng buhay ko na low Naaalala ko '
+                 'ang mga moments Pinapakinggan mo aking sentiments Ikaw ang '
+                 "perfect and happy solution Kapag ako'y nasa lonely condition "
+                 "My efforts pilit binubuhos Time ko tanging sa'yo inuubos "
+                 "Sacrifice para lang sa'yo For me na makamit matamis mong oo "
+                 'You are not a manhid sana For my love na madama I love you, '
+                 'mahal kita Please lang maging akin ka na'],
+ 'quoted_username': ['erviray10'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=215167>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['ang cute mo hehehehehe'],
+ 'post_counter': ['11'],
+ 'post_subject': '',
+ 'post_time': ['Oct 28, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.01'],
+ 'user_total_posts': [' 19'],
+ 'username': ['_queen-beryl_']}
+2017-11-10 03:39:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=515902>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Mahal kita if you only know Tinuruan mo ko how to grow Ikaw '
+                  'rin ang nagpapaglow Sa level ng buhay ko na low Naaalala ko '
+                  'ang mga moments Pinapakinggan mo aking sentiments Ikaw ang '
+                  "perfect and happy solution Kapag ako'y nasa lonely "
+                  "condition My efforts pilit binubuhos Time ko tanging sa'yo "
+                  "inuubos Sacrifice para lang sa'yo For me na makamit matamis "
+                  'mong oo You are not a manhid sana For my love na madama I '
+                  'love you, mahal kita Please lang maging akin ka na'],
+ 'post_counter': ['15'],
+ 'post_subject': 'Tula For You (Konyo. LOL)',
+ 'post_time': ['Oct 30, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.14'],
+ 'user_total_posts': [' 265'],
+ 'username': ['erviray10']}
+2017-11-10 03:39:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=413561>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['ayun crush kita'],
+ 'post_counter': ['12'],
+ 'post_subject': '',
+ 'post_time': ['Oct 30, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.48'],
+ 'user_total_posts': [' 1,199'],
+ 'username': ['ninyarica']}
+2017-11-10 03:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=482087> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['ay crush... kasama nga kita tuwing break.. hirap naman '
+                  'sabihin na crush kita.. sarap tingnan ng face mo, nakangiti '
+                  'ka man or hindi. di lang talaga kita matingnan ng matagal '
+                  'dahil nahihiya ako.. haaay.'],
+ 'post_counter': ['20'],
+ 'post_subject': '',
+ 'post_time': ['Nov 13, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=334731> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=494372> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=482087>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Nahawakan ko nanaman ang kamay mo.... hayyy....'],
+ 'post_counter': ['14'],
+ 'post_subject': '',
+ 'post_time': ['Oct 30, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.44'],
+ 'user_total_posts': [' 2,981'],
+ 'username': ['HunkyKalel']}
+2017-11-10 03:39:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=334731>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Dear Crush, sana makasalubong kita sa campus araw-araw para '
+                  'naman inspired ako palagi. Kinikilig pa din ako pag '
+                  'naaalala kong nag-hug tayo. <3'],
+ 'post_counter': ['19'],
+ 'post_subject': '',
+ 'post_time': ['Nov 12, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.06'],
+ 'user_total_posts': [' 177'],
+ 'username': ['aluapacnaib']}
+2017-11-10 03:39:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=494372>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['wag ka na magpaaya sa kanya ng coffee! hmp.'],
+ 'post_counter': ['18'],
+ 'post_subject': '',
+ 'post_time': ['Oct 31, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.74'],
+ 'user_total_posts': [' 3,461'],
+ 'username': ['IwantTObreathe']}
+2017-11-10 03:39:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=515293> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=515293>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Boy: Sana naging kandado ka nalang.. Girl: Baket? Boy: Para '
+                  'ako yung susi na magbubukas sayo..'],
+ 'post_counter': ['16'],
+ 'post_subject': '',
+ 'post_time': ['Oct 30, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.00'],
+ 'user_total_posts': [' 3'],
+ 'username': ['TGP_Kid']}
+2017-11-10 03:39:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662)
+2017-11-10 03:39:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=455809> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=482087> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=455809>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['i heart you'],
+ 'post_counter': ['25'],
+ 'post_subject': '',
+ 'post_time': ['Dec 5, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.01'],
+ 'user_total_posts': [' 23'],
+ 'username': ['Boy_Mani']}
+2017-11-10 03:39:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=476480> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=482087>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Kung alam mo lang na gusto kita....'],
+ 'post_counter': ['28'],
+ 'post_subject': '',
+ 'post_time': ['Dec 5, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.44'],
+ 'user_total_posts': [' 2,981'],
+ 'username': ['HunkyKalel']}
+2017-11-10 03:39:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=519333> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=207714> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=476480>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Wala akong hit sa evaluations. Can you hit on me instead?'],
+ 'post_counter': ['22'],
+ 'post_subject': '',
+ 'post_time': ['Nov 16, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.75'],
+ 'user_total_posts': [' 3,683'],
+ 'username': ['valerie_hatesyou']}
+2017-11-10 03:39:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=519333>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['kras kita'],
+ 'post_counter': ['27'],
+ 'post_subject': '',
+ 'post_time': ['Dec 5, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.05'],
+ 'user_total_posts': [' 86'],
+ 'username': ['banwa']}
+2017-11-10 03:39:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=207714>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['nung nagkakape tayo kahapon tapos tinititigan kita habang '
+                  'nagsasalita ka, di ko mapigilan di mapangiti saka '
+                  'tumawa....kinikilig ako eh. hahaha! wag ka ma conscious ha? '
+                  'wag mo din kasi ako tititigan. hihihi!'],
+ 'post_counter': ['26'],
+ 'post_subject': '',
+ 'post_time': ['Dec 5, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 2.25'],
+ 'user_total_posts': [' 8,532'],
+ 'username': ['caffeine_kittie']}
+2017-11-10 03:39:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=297758> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=207714> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['sa yo crush.... siguro yung kaninang eye contact natin ay '
+                  'senyales na para lumayo ako sa yo.......'],
+ 'post_counter': ['21'],
+ 'post_subject': '',
+ 'post_time': ['Nov 15, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=297758>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Tae ka friend zoned ako sayo. Huhu. Ako naman pansinin '
+                  'mo!!!'],
+ 'post_counter': ['24'],
+ 'post_subject': '',
+ 'post_time': ['Dec 4, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.05'],
+ 'user_total_posts': [' 148'],
+ 'username': ['kamotengbangag']}
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=207714>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['kahapon crush lang kita, ngayon mahal na natin ang '
+                  "isa't-isa."],
+ 'post_counter': ['30'],
+ 'post_subject': '',
+ 'post_time': ['Dec 5, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 2.25'],
+ 'user_total_posts': [' 8,532'],
+ 'username': ['caffeine_kittie']}
+2017-11-10 03:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=519333> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=519333> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440150> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=463612> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=519333>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['wala akong sasabihin...'],
+ 'post_counter': ['23'],
+ 'post_subject': '',
+ 'post_time': ['Nov 16, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.05'],
+ 'user_total_posts': [' 86'],
+ 'username': ['banwa']}
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=519333>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['yan ang banat. hehehe'],
+ 'post_counter': ['29'],
+ 'post_subject': '',
+ 'post_time': ['Dec 5, 2012'],
+ 'quoted_post': ['Kung alam mo lang na gusto kita....'],
+ 'quoted_username': ['HunkyKalel'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.05'],
+ 'user_total_posts': [' 86'],
+ 'username': ['banwa']}
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440150>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['kras kita kras kita ....... ng yelo ..... kain tayo '
+                  'halohalo'],
+ 'post_counter': ['34'],
+ 'post_subject': '',
+ 'post_time': ['Jan 14, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.26'],
+ 'user_total_posts': [' 600'],
+ 'username': ['simplykhrizzie']}
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=463612>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['ang cute mo, kaya crush kita eh'],
+ 'post_counter': ['31'],
+ 'post_subject': '',
+ 'post_time': ['Dec 5, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 5.46'],
+ 'user_total_posts': [' 11,937'],
+ 'username': ['greenlover99']}
+2017-11-10 03:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Crush, extremes ka talaga.. minsan napakasweet mo, minsan '
+                  'napaka suplado mo at di makapansin. haaay..'],
+ 'post_counter': ['36'],
+ 'post_subject': '',
+ 'post_time': ['Mar 23, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=513304> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=528186> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['hay nako kras, suplado ka na naman dahil bday mo.. hmpf.. '
+                  'hepi bday sayo today, D....'],
+ 'post_counter': ['40'],
+ 'post_subject': '',
+ 'post_time': ['Mar 26, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=513304>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['bat bigla kitang hndi nakita.. OFW ka na ba.. ?'],
+ 'post_counter': ['32'],
+ 'post_subject': '',
+ 'post_time': ['Dec 5, 2012'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 303'],
+ 'username': ['SUPERAZK']}
+2017-11-10 03:39:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=493283> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=528186>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['ganado na ako magtrabaho pag nakita kita hehe'],
+ 'post_counter': ['35'],
+ 'post_subject': '',
+ 'post_time': ['Jan 18, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.00'],
+ 'user_total_posts': [' 8'],
+ 'username': ['chocolove']}
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['I realized na maybe, we are better off this way after the '
+                  'conversatio moments ago..pasensiya ka nat wala akong '
+                  'pangload..yagit ground level kasi ko'],
+ 'post_counter': ['37'],
+ 'post_subject': '',
+ 'post_time': ['Mar 23, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=493283>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['hi... ngiti naman jan pag napapasilip ka sa sulok ko dito '
+                  'sa opis... wag suplado... di uso yan... hayst...'],
+ 'post_counter': ['39'],
+ 'post_subject': '',
+ 'post_time': ['Mar 25, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.31'],
+ 'user_total_posts': [' 612'],
+ 'username': ['mluisaconti']}
+2017-11-10 03:39:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Crush, di ka pala photogenic.. mas gusto kita sa '
+                  'personal..'],
+ 'post_counter': ['33'],
+ 'post_subject': '',
+ 'post_time': ['Jan 14, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=370852> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=370852>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['sana sabay ulit tayo sa train'],
+ 'post_counter': ['38'],
+ 'post_subject': '',
+ 'post_time': ['Mar 25, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.08'],
+ 'user_total_posts': [' 209'],
+ 'username': ['jomai_lacson']}
+2017-11-10 03:39:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=2)
+2017-11-10 03:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440273> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440273>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Sino kaya ang maswerteng kras ng Reyna ng KH?'],
+ 'post_counter': ['47'],
+ 'post_subject': '',
+ 'post_time': ['May 5, 2013'],
+ 'quoted_post': ['^nice strategy ====== kras ko, asan kana?I miss your '
+                 'presence'],
+ 'quoted_username': ['katze_schmuse'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.24'],
+ 'user_total_posts': [' 552'],
+ 'username': ['KingofDex']}
+2017-11-10 03:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=533458> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=527885> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=525647> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=530588> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=533458>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['CRUSH,Wala akong pinag-aralan pero ginagamit ko ang '
+                  'kabobohan ko!! Eh Ikaw na may pinag-aralan,ginagamit mo ba '
+                  'ang katalinuhan mo??????????'],
+ 'post_counter': ['41'],
+ 'post_subject': '',
+ 'post_time': ['Mar 31, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.14'],
+ 'user_total_posts': [' 241'],
+ 'username': ['alter_nik']}
+2017-11-10 03:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=506626> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=527885>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['^ hmm..Mars sino yang crush mo? Hihihi =) OnT: Kahit lagi '
+                  'mo akong inaasar at sinusungitan, hihintayin ko pa rin '
+                  'pag-uwi mo'],
+ 'post_counter': ['46'],
+ 'post_subject': '',
+ 'post_time': ['May 4, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.30'],
+ 'user_total_posts': [' 526'],
+ 'username': ['peanuts87']}
+2017-11-10 03:39:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Crush, himala, ikaw unang bumati sa akin kanina.. alin sa '
+                  'dalawa, dahil masama ang pakiramdam mo or dahil di na kita '
+                  'pinapansin? Hehe,, ..'],
+ 'post_counter': ['44'],
+ 'post_subject': '',
+ 'post_time': ['May 3, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=525647>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['I like you, I really really like you Can I be your suitor'],
+ 'post_counter': ['42'],
+ 'post_subject': '',
+ 'post_time': ['Apr 7, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.49'],
+ 'user_total_posts': [' 2,634'],
+ 'username': ['cyberjems']}
+2017-11-10 03:39:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=530588>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Wala naman'],
+ 'post_counter': ['43'],
+ 'post_subject': '',
+ 'post_time': ['Apr 17, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 7.06'],
+ 'user_total_posts': [' 12,299'],
+ 'username': ['maputik']}
+2017-11-10 03:39:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['^nice strategy ====== kras ko, asan kana?I miss your '
+                  'presence'],
+ 'post_counter': ['45'],
+ 'post_subject': '',
+ 'post_time': ['May 4, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=506626>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': [''],
+ 'post_counter': ['49'],
+ 'post_subject': '',
+ 'post_time': ['May 5, 2013'],
+ 'quoted_post': ['sleep tight freeder'],
+ 'quoted_username': ['SilverStreak'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.64'],
+ 'user_total_posts': [' 1,227'],
+ 'username': ['MrKupido']}
+2017-11-10 03:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=348977> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=376925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=348977>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['sleep tight crushie'],
+ 'post_counter': ['48'],
+ 'post_subject': '',
+ 'post_time': ['May 5, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.17'],
+ 'user_total_posts': [' 476'],
+ 'username': ['SilverStreak']}
+2017-11-10 03:39:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=376925>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['hey crushie nakita na naman kita!'],
+ 'post_counter': ['52'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': ['sleep tight crushie'],
+ 'quoted_username': ['SilverStreak'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 437'],
+ 'username': ['mochanne']}
+2017-11-10 03:39:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=274768> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=274768>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['ang sarap mo'],
+ 'post_counter': ['51'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 2.00'],
+ 'user_total_posts': [' 6,687'],
+ 'username': ['lady mint']}
+2017-11-10 03:39:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['secret'],
+ 'post_counter': ['50'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': ['Sino kaya ang maswerteng kras ng Reyna ng KH?'],
+ 'quoted_username': ['KingofDex'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=348977> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=348977>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['sobra kasi sa protein...bawasan mo sya'],
+ 'post_counter': ['58'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': ['Kras Ko, galit ka na naman?'],
+ 'quoted_username': ['mluisaconti'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.17'],
+ 'user_total_posts': [' 476'],
+ 'username': ['SilverStreak']}
+2017-11-10 03:39:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=506626> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=506626>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['tnx LM'],
+ 'post_counter': ['60'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': ['ang sarap mo'],
+ 'quoted_username': ['lady mint'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.64'],
+ 'user_total_posts': [' 1,227'],
+ 'username': ['MrKupido']}
+2017-11-10 03:39:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=493283> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=376925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=348977> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=493283>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Kras Ko, galit ka na naman?'],
+ 'post_counter': ['57'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.31'],
+ 'user_total_posts': [' 612'],
+ 'username': ['mluisaconti']}
+2017-11-10 03:39:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=348977> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=493283> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=376925>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['crushie, kahit naman di ako tulog im always dreaming of '
+                  'you!'],
+ 'post_counter': ['54'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 437'],
+ 'username': ['mochanne']}
+2017-11-10 03:39:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=348977>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['crushie...crush na crush kita...7months na kitang crush'],
+ 'post_counter': ['55'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.17'],
+ 'user_total_posts': [' 476'],
+ 'username': ['SilverStreak']}
+2017-11-10 03:39:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=348977>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['crushie, maya maya lang matutulog ka na..dream of me ha'],
+ 'post_counter': ['53'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.17'],
+ 'user_total_posts': [' 476'],
+ 'username': ['SilverStreak']}
+2017-11-10 03:39:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=493283>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['ahhh... kaya pala sige na nga papa-refill na ako'],
+ 'post_counter': ['59'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': ['sobra kasi sa protein...bawasan mo sya'],
+ 'quoted_username': ['SilverStreak'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.31'],
+ 'user_total_posts': [' 612'],
+ 'username': ['mluisaconti']}
+2017-11-10 03:39:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=376925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=376925>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Crushie, looking forward for the 8th month na pagiging '
+                  'crush kita'],
+ 'post_counter': ['56'],
+ 'post_subject': '',
+ 'post_time': ['May 6, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 437'],
+ 'username': ['mochanne']}
+2017-11-10 03:39:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=3)
+2017-11-10 03:39:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=348977> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=207714> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=348977>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Crush...sana matulog ka muna..ang eyebags mo oh'],
+ 'post_counter': ['65'],
+ 'post_subject': '',
+ 'post_time': ['May 9, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.17'],
+ 'user_total_posts': [' 476'],
+ 'username': ['SilverStreak']}
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=493283> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=376925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=207714>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ["Happy birthday crush! Get well soon. I love you!!! Can't "
+                  'wait to see you again'],
+ 'post_counter': ['61'],
+ 'post_subject': '',
+ 'post_time': ['May 7, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 2.25'],
+ 'user_total_posts': [' 8,532'],
+ 'username': ['caffeine_kittie']}
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=529915> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=351829> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=495525> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=376925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=493283>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['kinilig akong tunay nang makita ko na pinalakpakan mo ako '
+                  'after ng performance ko tumalon ang puso ko nang samahan mo '
+                  'ako sa stage at inakbayan mo ako ang bilis ng tibok ng puso '
+                  'ko nang ibigay mo upuan mo sa akin pagkababa ko ng stage '
+                  'ganito pala ang magka-crush nalimutan ko na kasi ang saya '
+                  'lang'],
+ 'post_counter': ['64'],
+ 'post_subject': '',
+ 'post_time': ['May 7, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.31'],
+ 'user_total_posts': [' 612'],
+ 'username': ['mluisaconti']}
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=376925>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Crush gusto ko sabay tayo matulog'],
+ 'post_counter': ['66'],
+ 'post_subject': '',
+ 'post_time': ['May 10, 2013'],
+ 'quoted_post': ['Crush...sana matulog ka muna..ang eyebags mo oh'],
+ 'quoted_username': ['SilverStreak'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 437'],
+ 'username': ['mochanne']}
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=529915>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['guapo niya grabe'],
+ 'post_counter': ['62'],
+ 'post_subject': '',
+ 'post_time': ['May 7, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.87'],
+ 'user_total_posts': [' 1,523'],
+ 'username': ['sexyjoyce01']}
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=351829>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['for you crushie You make me smile like the sun Fall outta '
+                  'bed Sing like a bird Dizzy in my head Spin like a record '
+                  'Crazy on a Sunday night You make me dance like a fool '
+                  'Forget how to breathe Shine like gold Buzz like a bee Just '
+                  'the thought of you can drive me wild Oh, you make me smile '
+                  'see you in a few'],
+ 'post_counter': ['63'],
+ 'post_subject': '',
+ 'post_time': ['May 7, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.80'],
+ 'user_total_posts': [' 5,090'],
+ 'username': ['beach_babe']}
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=495525>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['paq u ka!!! BAKLA!'],
+ 'post_counter': ['67'],
+ 'post_subject': '',
+ 'post_time': ['May 10, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.82'],
+ 'user_total_posts': [' 1,634'],
+ 'username': ['spooktwo']}
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=376925>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Kilig much!'],
+ 'post_counter': ['70'],
+ 'post_subject': '',
+ 'post_time': ['May 10, 2013'],
+ 'quoted_post': ['Gudmorning crush'],
+ 'quoted_username': ['SilverStreak'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 437'],
+ 'username': ['mochanne']}
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=348977> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=348977> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=348977>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['^^^ wahahaha..'],
+ 'post_counter': ['73'],
+ 'post_subject': '',
+ 'post_time': ['May 10, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.17'],
+ 'user_total_posts': [' 476'],
+ 'username': ['SilverStreak']}
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=348977>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Gudmorning crush'],
+ 'post_counter': ['69'],
+ 'post_subject': '',
+ 'post_time': ['May 10, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.17'],
+ 'user_total_posts': [' 476'],
+ 'username': ['SilverStreak']}
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['dear new found crush, di ko akalain, kakaiba ka pala'],
+ 'post_counter': ['68'],
+ 'post_subject': '',
+ 'post_time': ['May 10, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=348977> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=348977>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Crush...naiinlab nako sayo'],
+ 'post_counter': ['71'],
+ 'post_subject': '',
+ 'post_time': ['May 10, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.17'],
+ 'user_total_posts': [' 476'],
+ 'username': ['SilverStreak']}
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=514992> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['natawa naman ako dito ont: crush, sobrang nag enjoy ako sa '
+                  'kwentuhan natin sana ikaw din'],
+ 'post_counter': ['74'],
+ 'post_subject': '',
+ 'post_time': ['May 11, 2013'],
+ 'quoted_post': ['I hope you die. Oh wait.... wrong thread.'],
+ 'quoted_username': ['Merida'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=496557> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=514992>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['I hope you die. Oh wait.... wrong thread.'],
+ 'post_counter': ['72'],
+ 'post_subject': '',
+ 'post_time': ['May 10, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 2.27'],
+ 'user_total_posts': [' 4,212'],
+ 'username': ['Merida']}
+2017-11-10 03:39:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=496557>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['sana crush mo rin ako..'],
+ 'post_counter': ['75'],
+ 'post_subject': '',
+ 'post_time': ['May 11, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.58'],
+ 'user_total_posts': [' 1,137'],
+ 'username': ['Aizrith']}
+2017-11-10 03:39:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=273353> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=273353>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['crush sana hindi na kita naging crush di na kita maasar eh, '
+                  'and lagi na lang natatahimik ako pag nandiyan ka'],
+ 'post_counter': ['79'],
+ 'post_subject': '',
+ 'post_time': ['May 12, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.45'],
+ 'user_total_posts': [' 1,514'],
+ 'username': ['aimboy234']}
+2017-11-10 03:39:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=317640> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=376925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=317640>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Crush ilang linggo na kitang hindi nakikita when will i see '
+                  'you again?'],
+ 'post_counter': ['77'],
+ 'post_subject': '',
+ 'post_time': ['May 12, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.32'],
+ 'user_total_posts': [' 4,079'],
+ 'username': ['senche']}
+2017-11-10 03:39:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=376925>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Hi crush, yup lagi naman kita napapaniginipsn'],
+ 'post_counter': ['80'],
+ 'post_subject': '',
+ 'post_time': ['May 13, 2013'],
+ 'quoted_post': ['hi crush...sana mapanaginipan mo ko habang ka'],
+ 'quoted_username': ['SilverStreak'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 437'],
+ 'username': ['mochanne']}
+2017-11-10 03:39:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=544059> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=348977> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=544059>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['To my crush na kapitbhay namin, sana wala ka talgang asawa, '
+                  'wala ako idea about sayo.'],
+ 'post_counter': ['76'],
+ 'post_subject': 'Hi crush',
+ 'post_time': ['May 11, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.00'],
+ 'user_total_posts': [' 3'],
+ 'username': ['annemary0030']}
+2017-11-10 03:39:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=4)
+2017-11-10 03:39:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=348977>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['hi crush...sana mapanaginipan mo ko habang ka'],
+ 'post_counter': ['78'],
+ 'post_subject': '',
+ 'post_time': ['May 12, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.17'],
+ 'user_total_posts': [' 476'],
+ 'username': ['SilverStreak']}
+2017-11-10 03:39:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=348977> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=351829> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=348977>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Hi crush...TS ka na pala ngayon..di na kita mareach'],
+ 'post_counter': ['85'],
+ 'post_subject': '',
+ 'post_time': ['May 13, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.17'],
+ 'user_total_posts': [' 476'],
+ 'username': ['SilverStreak']}
+2017-11-10 03:39:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=376925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=329921> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=351829>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['i crush you physically and intellectually'],
+ 'post_counter': ['81'],
+ 'post_subject': '',
+ 'post_time': ['May 13, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.80'],
+ 'user_total_posts': [' 5,090'],
+ 'username': ['beach_babe']}
+2017-11-10 03:39:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=376925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=376925>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['oist sino yan'],
+ 'post_counter': ['83'],
+ 'post_subject': '',
+ 'post_time': ['May 13, 2013'],
+ 'quoted_post': ['Hey CRUSH Bakit lagi mo akong Inaaway sa PM pero yung mga '
+                 'nanlalait at UMOO-KRAY sa iyo ng Harap-Harapan dito sa PEX '
+                 'eh deadma ka lang'],
+ 'quoted_username': ['freedertjosh'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 437'],
+ 'username': ['mochanne']}
+2017-11-10 03:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=329921>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Hey CRUSH Bakit lagi mo akong Inaaway sa PM pero yung mga '
+                  'nanlalait at UMOO-KRAY sa iyo ng Harap-Harapan dito sa PEX '
+                  'eh deadma ka lang'],
+ 'post_counter': ['82'],
+ 'post_subject': '',
+ 'post_time': ['May 13, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.48'],
+ 'user_total_posts': [' 1,452'],
+ 'username': ['freedertjosh']}
+2017-11-10 03:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=376925>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['hi crush. kilig much'],
+ 'post_counter': ['86'],
+ 'post_subject': '',
+ 'post_time': ['May 13, 2013'],
+ 'quoted_post': ['Hi crush...TS ka na pala ngayon..di na kita mareach'],
+ 'quoted_username': ['SilverStreak'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 437'],
+ 'username': ['mochanne']}
+2017-11-10 03:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['ang cute cute cute mo! kering keri'],
+ 'post_counter': ['90'],
+ 'post_subject': '',
+ 'post_time': ['Jun 4, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=499069> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=499069>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': ['https://www.facebook.com/asianvisionsgroup'],
+ 'post_content': ['na check niya itong facebook page para pwede siya mag post '
+                  'ng questio niya tungkol sa eye problem niya '
+                  'https://www.facebook.com/asianvisionsgroup'],
+ 'post_counter': ['89'],
+ 'post_subject': '',
+ 'post_time': ['Jun 3, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.15'],
+ 'user_total_posts': [' 298'],
+ 'username': ['grassjelly']}
+2017-11-10 03:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=376925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=376925>
+{'embed_urls': [],
+ 'img_urls': ['http://24.media.tumblr.com/979c502b165e7fcdccb356a8b79ea971/tumblr_mmorkt5u6C1reyd4yo1_500.jpg'],
+ 'other_urls': [],
+ 'post_content': ['hi crush,'],
+ 'post_counter': ['94'],
+ 'post_subject': '',
+ 'post_time': ['Jun 18, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.16'],
+ 'user_total_posts': [' 437'],
+ 'username': ['mochanne']}
+2017-11-10 03:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=493283> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=329921> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=493283>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['pwede ba kita ma-take out mamaya?'],
+ 'post_counter': ['98'],
+ 'post_subject': '',
+ 'post_time': ['Jun 19, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.31'],
+ 'user_total_posts': [' 612'],
+ 'username': ['mluisaconti']}
+2017-11-10 03:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=329921>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Susunod........Anne Gustong alamin kung sino ang UMAAWAY sa '
+                  'akin sa PM ABANGAN!!!!!!!!!'],
+ 'post_counter': ['84'],
+ 'post_subject': '',
+ 'post_time': ['May 13, 2013'],
+ 'quoted_post': ['oist sino yan'],
+ 'quoted_username': ['mochanne'],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.48'],
+ 'user_total_posts': [' 1,452'],
+ 'username': ['freedertjosh']}
+2017-11-10 03:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=493283> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=549099> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=493283>
+{'embed_urls': [],
+ 'img_urls': ['https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-frc3/s480x480/971339_630222773671713_1952783878_n.jpg'],
+ 'other_urls': [],
+ 'post_content': ['Dear Crush, Love lots, Lui'],
+ 'post_counter': ['87'],
+ 'post_subject': '',
+ 'post_time': ['May 14, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.31'],
+ 'user_total_posts': [' 612'],
+ 'username': ['mluisaconti']}
+2017-11-10 03:39:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=549099>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Add me on Facebook, dammit!'],
+ 'post_counter': ['93'],
+ 'post_subject': '',
+ 'post_time': ['Jun 16, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.00'],
+ 'user_total_posts': [' 4'],
+ 'username': ['MissAnaMaria']}
+2017-11-10 03:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=414729> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=414729>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ["Dear crush, You're VERY NEAR, yet VERY FAR hay life"],
+ 'post_counter': ['92'],
+ 'post_subject': '',
+ 'post_time': ['Jun 5, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.00'],
+ 'user_total_posts': [' 5'],
+ 'username': ['krisantine']}
+2017-11-10 03:39:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=403058> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=403058>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['crush, brush mo naman teeth mo.'],
+ 'post_counter': ['97'],
+ 'post_subject': '',
+ 'post_time': ['Jun 19, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.00'],
+ 'user_total_posts': [' 1'],
+ 'username': ['mangkepweng2']}
+2017-11-10 03:39:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['I am now over you. Goodbye.'],
+ 'post_counter': ['100'],
+ 'post_subject': 'Dear Crush,',
+ 'post_time': ['Feb 22, 2014'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['hmmmm basta thank you lang..nag eenjoy ako kausap ka hope '
+                  "you're fine.."],
+ 'post_counter': ['99'],
+ 'post_subject': '',
+ 'post_time': ['Jun 21, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['i can feel the changes in you, nag aadapt ka na sa pace '
+                  'ko..thanks i crush you'],
+ 'post_counter': ['96'],
+ 'post_subject': '',
+ 'post_time': ['Jun 19, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['ang cute mo'],
+ 'post_counter': ['88'],
+ 'post_subject': '',
+ 'post_time': ['Jun 2, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=493283> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=493283>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ["miles away...you're so many miles away... hay if miles na "
+                  'nga ang pagitan nating two cubicles... di kita kasi '
+                  'ma-sightsung!'],
+ 'post_counter': ['91'],
+ 'post_subject': '',
+ 'post_time': ['Jun 4, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.31'],
+ 'user_total_posts': [' 612'],
+ 'username': ['mluisaconti']}
+2017-11-10 03:39:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=549532> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=5)
+2017-11-10 03:39:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=549532>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ["Base sa mga kwento nila 'bout you, na turnoff na ko sayo "
+                  'panu na ko wala na ko inspiration sa office ... huhu..'],
+ 'post_counter': ['95'],
+ 'post_subject': '',
+ 'post_time': ['Jun 18, 2013'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0'],
+ 'user_total_posts': [' 0'],
+ 'username': ['esla']}
+2017-11-10 03:39:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=689576> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=689047> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=689576>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ["hello is it me you're looking for?"],
+ 'post_counter': ['104'],
+ 'post_subject': '',
+ 'post_time': ['May 16, 2016'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0'],
+ 'user_total_posts': [' 0'],
+ 'username': ['beeps05']}
+2017-11-10 03:39:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=493283> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=690333> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=689047>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['crush, iba ka talagang magpa-crush, alam mo naman na crush '
+                  "pa rin kita, eto pa rin ako't umaasa kasi paasa ka, alam mo "
+                  'ba kung bakit kita crush, kasi, crushable ka <3'],
+ 'post_counter': ['108'],
+ 'post_subject': '',
+ 'post_time': ['May 25, 2016'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.03'],
+ 'user_total_posts': [' 15'],
+ 'username': ['bd_alexie']}
+2017-11-10 03:39:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=493283>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['^^yiheee! ipush na yan hardrive! '
+                  '************************************* Crush, bawas bawasan '
+                  'ang pagiging suplado ha? Lui'],
+ 'post_counter': ['102'],
+ 'post_subject': '',
+ 'post_time': ['Feb 23, 2014'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.31'],
+ 'user_total_posts': [' 612'],
+ 'username': ['mluisaconti']}
+2017-11-10 03:39:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=690333>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['pag nasa tamang edad ka na pwede ba kitang ligawan?'],
+ 'post_counter': ['107'],
+ 'post_subject': '',
+ 'post_time': ['May 25, 2016'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.00'],
+ 'user_total_posts': [' 1'],
+ 'username': ['ryker79']}
+2017-11-10 03:39:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': ['https://pbs.twimg.com/media/Ch5G2OxUoAAcjOC.jpg'],
+ 'other_urls': [],
+ 'post_content': [''],
+ 'post_counter': ['103'],
+ 'post_subject': 'ayeeeeeeee!!!',
+ 'post_time': ['May 13, 2016'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=533255> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=547982> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Crush, pinasaya mo ako kasi hindi ka na aalis. Nakachat na '
+                  'din kita after a few days of absence. Namiss kita, sana '
+                  'namiss mo din ako..'],
+ 'post_counter': ['106'],
+ 'post_subject': 'yehey',
+ 'post_time': ['May 18, 2016'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=717348> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=501012> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=533255>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ["I'm letting you go now i know, crush lang to kaya paano mo "
+                  'mai-le-let go yung isang tao kung hindi siya naging sayo '
+                  'pero sa akin, i-le-let go ko na yung damdamin ko para sa '
+                  'kanya para maging malaya na rin ako tsaka maging ok na rin '
+                  'ako kasi these past few days talagang wala na ako sa sarili '
+                  'ko, napabayaan ko yung pag-aaral ko, di na ako maasahan sa '
+                  'lahat ng bagay, nagkakasakit na ako dahil lang sayo hard '
+                  'talaga kapg unrequired love no? lalo na kapag straight '
+                  'crushes'],
+ 'post_counter': ['110'],
+ 'post_subject': '',
+ 'post_time': ['May 30, 2016'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.96'],
+ 'user_total_posts': [' 1,653'],
+ 'username': ['ChaCharotSantos']}
+2017-11-10 03:39:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=547982>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Ahem crush sagutin mo na ako ng liligawan kita habang '
+                  'kayakap kita puwede ba'],
+ 'post_counter': ['101'],
+ 'post_subject': '',
+ 'post_time': ['Feb 22, 2014'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.62'],
+ 'user_total_posts': [' 2,616'],
+ 'username': ['hardrive']}
+2017-11-10 03:39:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=717348>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['dear crush. super cute mo. alam kong wala namang '
+                  'patutunguhan yung pagkahumaling ko sayo dahil bakla ka pero '
+                  'huhuhuh bakit ang gwapo mo kasi'],
+ 'post_counter': ['114'],
+ 'post_subject': '',
+ 'post_time': ['Jul 9, 2017'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.08'],
+ 'user_total_posts': [' 26'],
+ 'username': ['charisms']}
+2017-11-10 03:39:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=501012>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['^wow ang drama charot ======== Wherever you are I hope '
+                  "you're doing okay.Namimiss ko ang katalinuhan mo, but I "
+                  "guess you're busy now.Baka panay na naman pasyal mo sa "
+                  "Libre mo naman ako sa ramen house sa So paano ba?I'll see "
+                  'you when I see you STILL looking forward to seeing John '
+                  'Wick 2, and isa lang maaalala ko'],
+ 'post_counter': ['111'],
+ 'post_subject': '',
+ 'post_time': ['May 30, 2016'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 3.46'],
+ 'user_total_posts': [' 6,742'],
+ 'username': ['katze_schmuse']}
+2017-11-10 03:39:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=440050> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=482925> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=440050>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['pag weekends, di kita nakikita. pag may pasok lang sulit at '
+                  'busog ang mga mata ko. haaay.'],
+ 'post_counter': ['109'],
+ 'post_subject': 'weekend',
+ 'post_time': ['May 29, 2016'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.10'],
+ 'user_total_posts': [' 236'],
+ 'username': ['LONELYDON']}
+2017-11-10 03:39:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=31760> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=482925>
+{'embed_urls': [],
+ 'img_urls': ['https://media.giphy.com/media/13IFOoy9qT4bDi/giphy.gif'],
+ 'other_urls': [],
+ 'post_content': ['daan daan ka lang. wag ka lang titingin.'],
+ 'post_counter': ['115'],
+ 'post_subject': '',
+ 'post_time': ['Sep 7, 2017'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0.15'],
+ 'user_total_posts': [' 318'],
+ 'username': ['frittycoffee']}
+2017-11-10 03:39:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=31760>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Ms. ____, ang cute mo, kahit ilang oras tayong mag '
+                  'titigan.... hindi pwede kasi may asawa na ako'],
+ 'post_counter': ['105'],
+ 'post_subject': '',
+ 'post_time': ['May 18, 2016'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.13'],
+ 'user_total_posts': [' 6,653'],
+ 'username': ['tidge']}
+2017-11-10 03:39:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=610231> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=610231>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Yung crush ko nasa symbianize eh, hi crush! Crush din '
+                  'kita.'],
+ 'post_counter': ['113'],
+ 'post_subject': '',
+ 'post_time': ['Jul 8, 2017'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 0'],
+ 'user_total_posts': [' 0'],
+ 'username': ['cess466']}
+2017-11-10 03:39:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pinoyexchange.com/forums/member.php?u=693737> (referer: https://www.pinoyexchange.com/forums/showthread.php?t=593662&page=6)
+2017-11-10 03:39:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.pinoyexchange.com/forums/member.php?u=693737>
+{'embed_urls': [],
+ 'img_urls': [],
+ 'other_urls': [],
+ 'post_content': ['Madami akong crush. Ang crush is pag hanga lang naman. Para '
+                  'kay Katze ko. Yung nasa taas ko. Alam kong hindi ako naging '
+                  'mabuting tao para sayo at sa pakikisama ko sayo, pero kahit '
+                  'anong inis, galit at tampo mo sa akin, handa parin akong '
+                  'tulungan ka sa oras na kailanganin mo ako! Kahit anong '
+                  'mangyari, hindi parin magbabago ang aking paningin sayo '
+                  'simula nung unang nakilala kita! Even If you end up as the '
+                  "World's Enemy, I'll be your Knight! I will be loyal to you! "
+                  'in every way!'],
+ 'post_counter': ['112'],
+ 'post_subject': '',
+ 'post_time': ['Jul 14, 2016'],
+ 'quoted_post': [],
+ 'quoted_username': [],
+ 'subforum': ['Personals'],
+ 'thread_title': ['Anong gusto mong sabihin kay crush?'],
+ 'user_posts_per_day': [' 1.05'],
+ 'user_total_posts': [' 535'],
+ 'username': ['HopelessDespair']}
+2017-11-10 03:39:48 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-11-10 03:39:48 [scrapy.extensions.feedexport] INFO: Stored csv feed (115 items) in: output.csv
+2017-11-10 03:39:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 94303,
+ 'downloader/request_count': 124,
+ 'downloader/request_method_count/GET': 124,
+ 'downloader/response_bytes': 1645970,
+ 'downloader/response_count': 124,
+ 'downloader/response_status_count/200': 123,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 11, 9, 19, 39, 48, 995399),
+ 'item_scraped_count': 115,
+ 'log_count/DEBUG': 240,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 7,
+ 'response_received_count': 123,
+ 'scheduler/dequeued': 122,
+ 'scheduler/dequeued/memory': 122,
+ 'scheduler/enqueued': 122,
+ 'scheduler/enqueued/memory': 122,
+ 'start_time': datetime.datetime(2017, 11, 9, 19, 39, 21, 862537)}
+2017-11-10 03:39:49 [scrapy.core.engine] INFO: Spider closed (finished)
