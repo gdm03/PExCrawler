@@ -1,15 +1,10 @@
+import csv
 import numpy as np
 import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
 
 class CSVOperations():
-    def string_to_datetime(self, s):
-        return datetime.strptime(s, "%d-%b-%y").date()
-
-    def get_daterange(self, li):
-        print(min(li), max(li))
-
     # Filters most recent threads by most recent dates
     def filter_dates(self, dates, limit):
         return sorted(dates, key=lambda x: datetime.strptime(x[2], "%d-%b-%y"), reverse=True)[:limit]
@@ -17,8 +12,22 @@ class CSVOperations():
     def plot_post_depth(self):
         pass
 
-    # 1st graph: x - time, y - number of posts
-    def plot_number_of_posts(self):
+    # Update to pandas sort, take note of encoding
+    def sort_data(self):
+        with open('output.csv', 'r', encoding='utf8') as unsorted:
+            reader = csv.reader(unsorted)
+            header = next(reader, None)
+            # 1 - thread_title, 3 - post_counter
+            sortedlist = sorted(reader, key=lambda i: (i[1], int(i[3])), reverse=False)
+
+        with open('sorted.csv', 'w', newline='', encoding='utf8') as output:
+            wr = csv.writer(output, dialect='excel')
+            if header:
+                wr.writerow(header)
+            wr.writerows(sortedlist)
+
+    # misleading function, change later
+    def compute_post_time_counts(self):
         THREAD_LIMIT = 5
 
         df = pd.read_csv('sorted.csv')
@@ -60,9 +69,14 @@ class CSVOperations():
         df_recent_threads['counts'] = df_recent_threads.groupby(['subforum', 'thread_title', 'post_time'])[
             'post_time'].transform('count')
 
+        return df_recent_threads
+
+    # Plots the number of posts: x - time, y - number of posts
+    def plot_number_of_posts(self, df):
         #groups per subforum and thread_title (for graphing)
-        df_recent_threads['post_time'] = pd.to_datetime(df_recent_threads['post_time'])
-        grouped = df_recent_threads.groupby('subforum')
+
+        df['post_time'] = pd.to_datetime(df['post_time'])
+        grouped = df.groupby('subforum')
 
         for label, tdf in grouped:
             grouped2 = tdf.groupby('thread_title')
@@ -78,6 +92,7 @@ class CSVOperations():
             plt.legend()
             plt.show()
 
+    # Computes depth of post based on quoted posts
     def compute_post_depth(self):
         df = pd.read_csv('sorted.csv')
 
@@ -86,7 +101,6 @@ class CSVOperations():
 
         for thread in thread_list:
             # Get only post_content and quoted_post columns from original csv
-            #new_df = df[['post_content', 'quoted_post']].loc[df['thread_title'] == thread]
             new_df = df.loc[df['thread_title'] == thread]
             # Add column depth and initialize values to 0
             new_df['depth'] = 0
@@ -123,4 +137,6 @@ class CSVOperations():
 if __name__ == '__main__':
     #CSVOperations().compute_post_depth()
     #CSVOperations().plot_post_gap()
-    CSVOperations().plot_number_of_posts()
+    #CSVOperations().sort_data()
+
+    CSVOperations().plot_number_of_posts(CSVOperations().compute_post_time_counts())
