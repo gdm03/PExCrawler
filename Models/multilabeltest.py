@@ -9,7 +9,6 @@ from sklearn.preprocessing import MultiLabelBinarizer
 
 df = pd.read_csv('testmlb.csv')
 
-
 # X_train = np.array(["new york is a hell of a town",
 #                     "new york was originally dutch",
 #                     "the big apple is great",
@@ -39,8 +38,16 @@ y_train_text = df['dialogue_acts'].str.split(', ').dropna().tolist()
 #y_train_text = [[x] for x in test]
 #print(y_train_text)
 
-X_test = np.array(['nice day in nyc',
-                   'welcome to london',
+# X_test = np.array(['nice day in nyc',
+#                    'welcome to london',
+#                    'london is rainy',
+#                    'it is raining in britian',
+#                    'it is raining in britian and the big apple',
+#                    'it is raining in britian and nyc',
+#                    'hello welcome to new york. enjoy it here and london too'])
+
+X_test = np.array(['hey?',
+                   'Not sure what I should say.',
                    'london is rainy',
                    'it is raining in britian',
                    'it is raining in britian and the big apple',
@@ -53,6 +60,7 @@ mlb = MultiLabelBinarizer()
 Y = mlb.fit_transform(y_train_text)
 print(Y)
 print(list(mlb.classes_))
+
 classifier = Pipeline([
     ('vectorizer', CountVectorizer()),
     ('tfidf', TfidfTransformer()),
