@@ -138,5 +138,4 @@ if __name__ == '__main__':
     #CSVOperations().compute_post_depth()
     #CSVOperations().plot_post_gap()
     #CSVOperations().sort_data()
-
     CSVOperations().plot_number_of_posts(CSVOperations().compute_post_time_counts())
