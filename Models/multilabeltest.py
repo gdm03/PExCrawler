@@ -36,7 +36,7 @@ X_train = df['post_content'].dropna().values.astype('U')
 #test = df['dialogue_acts'].dropna().values.astype('U').tolist()
 y_train_text = df['dialogue_acts'].str.split(', ').dropna().tolist()
 #y_train_text = [[x] for x in test]
-#print(y_train_text)
+print(y_train_text)
 
 # X_test = np.array(['nice day in nyc',
 #                    'welcome to london',
