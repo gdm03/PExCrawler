@@ -104,6 +104,7 @@ class CSVOperations():
             new_df = df.loc[df['thread_title'] == thread]
             # Add column depth and initialize values to 0
             new_df['depth'] = 0
+            # print(new_df)
 
             # Check all non-empty quoted_posts
             qp_indices = new_df.index[new_df['quoted_post'].notnull()]
@@ -112,9 +113,32 @@ class CSVOperations():
                 # Get index of matching quoted_post to post_content
                 match = new_df.index[new_df['post_content'] == new_df['quoted_post'].loc[idx]].tolist()
 
+                # if there is quoted_post match
                 if match:
-                    new_df['depth'].loc[idx] = new_df['depth'].loc[match[0]] + 1
+                    # if there are multiple depths, (e.g. "1, 1")
+                    # if type(new_df['depth'].loc[match[0]]) is str:
+                    #     new_df['depth'].loc[idx] = 1
+                    if type(new_df['depth'].loc[match[0]]) is str:
+                        if ',<sep>,' in new_df['quoted_post'].loc[match[0]]:
+                            strings = new_df['quoted_post'].loc[match[0]].split(',<sep>,')
 
+                            for current_string in strings:
+                                new_idx = new_df.index[new_df['post_content'] == current_string].tolist()
+
+                                if new_idx:
+                                    new_df['depth'].loc[idx] = new_df['depth'].loc[new_idx[0]] + 1
+
+                                print(idx, match[0], "curr: ", current_string)
+                        else:
+                            depths = new_df['depth'].loc[match[0]].split(', ')
+                            strings = new_df['quoted_post'].loc[match[0]].split(',<sep>,')
+
+                            for x in depths:
+                                new_df['quoted_post'].loc[idx]
+                    else:
+                        new_df['depth'].loc[idx] = new_df['depth'].loc[match[0]] + 1
+
+                # if there is no quoted post match
                 else:
                     if ',<sep>,' in new_df['quoted_post'].loc[idx]:
                         strings = new_df['quoted_post'].loc[idx].split(',<sep>,')
@@ -127,15 +151,55 @@ class CSVOperations():
                                 depth_list.append(new_df['depth'].loc[new_idx[0]] + 1)
 
                         # Auto do nothing if depth_list is null
-                        new_df['quoted_post'].loc[idx] = ', '.join(x for x in strings)
+                        # new_df['quoted_post'].loc[idx] = ', '.join(x for x in strings)
+                        # new_df['quoted_post'].loc[idx] = ' '.join(x for x in strings)
                         new_df['depth'].loc[idx] = ', '.join(str(x) for x in depth_list)
+
 
             final = final.append(new_df)
 
         final.to_csv('final.csv', encoding='utf-8', index=False)
 
+    def compute_post_gap(self):
+        df = pd.read_csv('pex.csv')
+        post_dates = df['post_time']
+        df['post_gap'] = 0
+        # df['post_gap'] = pd.to_datetime(df['post_time']) - pd.to_datetime(df['post_time']).shift(-1)
+        final = pd.DataFrame()
+
+        # for i, (index, row) in enumerate(df.iterrows()):
+        for index, row in df.iterrows():
+            # current_time = pd.to_datetime(row['post_time'])
+            print(index)
+            if index != 0:
+                current_time = pd.to_datetime(df['post_time'].loc[index - 1])
+
+            else:
+                current_time = 0
+
+            if row['post_counter'] == 1:
+                post_gap_int = 0
+                # print(row['post_counter'], row['post_time'], post_gap_int)
+            else:
+                # post_gap_dt = pd.to_datetime(row['post_time']) - pd.to_datetime(current_time)
+                post_gap_dt = pd.to_datetime(row['post_time']) - current_time
+                # print(row['post_counter'], row['post_time'], gap)
+                post_gap_int = (post_gap_dt / np.timedelta64(1, 'D')).astype(int)
+                # print(row['thread_title'], row['post_counter'], row['post_time'], post_gap_dt, post_gap_int, type(row['post_counter']))
+
+            # print(post_gap_int)
+            df['post_gap'].loc[index] = post_gap_int
+
+        # print(df['post_gap'])
+
+        final = final.append(df)
+        final.to_csv('final.csv', encoding='utf-8', index=False)
+
+
 if __name__ == '__main__':
-    #CSVOperations().compute_post_depth()
+    # CSVOperations().compute_post_depth()
     #CSVOperations().plot_post_gap()
+    CSVOperations().compute_post_gap()
     #CSVOperations().sort_data()
-    CSVOperations().plot_number_of_posts(CSVOperations().compute_post_time_counts())
+    # CSVOperations().compute_post_gap()
+    # CSVOperations().plot_number_of_posts(CSVOperations().compute_post_time_counts())

@@ -10,6 +10,16 @@ import numpy as np
 from numpy import asarray
 from sklearn.preprocessing import MultiLabelBinarizer
 
+def convert_labels_to_int(labels):
+    target_names = ['Comment', 'Question', 'Backchannel', 'Expression', 'Others']
+    d = dict(zip(target_names, range(0, 5)))
+    enc_labels = []
+
+    for label in labels.split(', '):
+        enc_labels.append(d[label])
+
+    return enc_labels
+
 def check_wrong_spelling(dialogue_acts):
     i = 0
     j = 0
@@ -43,14 +53,13 @@ def compute_post_gap(df):
             print(row['post_counter'], row['post_time'], post_gap_dt, post_gap_int, type(row['post_counter']))
 
 if __name__ == '__main__':
-    df = pd.read_csv('pex2.csv')
-    # compute_post_gap(df.head(15))
+    df = pd.read_csv('pex.csv')
+    compute_post_gap(df.head(15))
 
     # get post_content
     # docs = df['post_content'].head(1463).tolist()
     # docs = df[pd.notnull(df['post_content'])]['post_content'].head(1463).tolist()
-    # max_size = 8000
-    max_size = 700
+    max_size = 8000
     df = df[pd.notnull(df['post_content'])]
     docs = df['post_content'].tolist()
     print("Docs: ", len(docs))
@@ -129,7 +138,6 @@ if __name__ == '__main__':
             embedding_matrix[i] = embedding_vector
 
     model = Sequential()
-    print("vocab_size: ", vocab_size, "dim_size: ", dim_size, "max_length: ", max_length)
     e = Embedding(vocab_size, dim_size, weights=[embedding_matrix], input_length=max_length, trainable=False)
     model.add(e)
     model.add(Flatten())
